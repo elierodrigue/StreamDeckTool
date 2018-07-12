@@ -1,0 +1,55 @@
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\obj\Debug\StreamDeck xSplit Preview.csprojResolveAssemblyReference.cache
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\obj\Debug\StreamDeck_xSplit_Preview.Properties.Resources.resources
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\obj\Debug\StreamDeck xSplit Preview.csproj.GenerateResource.Cache
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\obj\Debug\StreamDeck xSplit Preview.csproj.CoreCompileInputs.cache
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StreamDeck xSplit Preview.exe.config
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StreamDeck xSplit Preview.exe
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StreamDeck xSplit Preview.pdb
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StreamDeckSharp.dll
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StreamDeckSharp.pdb
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StreamDeckSharp.xml
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\obj\Debug\StreamDeck_xSplit_Preview.Form1.resources
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\obj\Debug\StreamDeck xSplit Preview.exe
+c:\users\elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\obj\Debug\StreamDeck xSplit Preview.pdb
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Bmp.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Cmp.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Cmw.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Fax.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Gif.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.J2k.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Jb2.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Jbg.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Png.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Raw.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.Tif.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Async.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.ColorConversion.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Drawing.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Drawing.MP.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.ImageProcessing.Effects.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.ImageProcessing.Utilities.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Svg.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Vector.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Wia.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Touchless.Vision.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\WebCamLib.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Touchless.Vision.pdb
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Codecs.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.ColorConversion.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Drawing.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.ImageProcessing.Effects.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Svg.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Leadtools.Wia.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\WebCamLib.pdb
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\NAudio.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\NAudio.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Audio.bmp
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\Speaker.bmp
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StopWatch.bmp
+C:\Users\Elie\source\repos\StreamDeck xSplit Preview\StreamDeck xSplit Preview\bin\Debug\StopWatch-Running.bmp

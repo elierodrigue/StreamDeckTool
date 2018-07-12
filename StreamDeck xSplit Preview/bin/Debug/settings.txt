@@ -1,0 +1,1 @@
+[{"OutputDeviceName":"Realtek Digital Output (Realtek High Definition Audio)","enabled":true,"ButtonId":0},{"webcamName":"XSplitBroadcaster","enabled":false,"ButtonId":2}]
