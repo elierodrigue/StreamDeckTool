@@ -40,9 +40,6 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="StreamDeckSharp, Version=0.1.10.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\streamdecksharp.0.1.10\lib\net40\StreamDeckSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -98,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\StreamDeckSharp-master\src\StreamDeckSharp\StreamDeckSharp.csproj">
+      <Project>{d06ab787-766e-4b28-89c4-8d948070eb1c}</Project>
+      <Name>StreamDeckSharp</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\GitLab\csharpWebCam\WebCamWrapper\WebCamWrapper.csproj">
       <Project>{cc5d5149-0092-4508-ac34-2abe1468a1c9}</Project>
       <Name>WebCamWrapper</Name>
