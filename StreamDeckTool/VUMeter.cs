@@ -10,24 +10,29 @@ namespace StreamDeck_xSplit_Preview
 {
     public class VUMeter : Job
     {
+        private bool recording = false;
+       
         public static List<string> GetDeviceList()
         {
             NAudio.CoreAudioApi.MMDeviceEnumerator enu = new NAudio.CoreAudioApi.MMDeviceEnumerator();
             var devices = enu.EnumerateAudioEndPoints(NAudio.CoreAudioApi.DataFlow.Render, NAudio.CoreAudioApi.DeviceState.Active);
             List<string> ret = new List<string>();
-            foreach (var d in devices)
-            {
-                try
-                {
-                    ret.Add(d.FriendlyName);
-                
-                }
-                catch (Exception exc)
-                {
+          
+              foreach (var d in devices)
+              {
+                  try
+                  {
+                  
+                    
+                      ret.Add(d.FriendlyName);
 
-                }
+                  }
+                  catch (Exception exc)
+                  {
 
-            }
+                  }
+
+              }
             ret.Sort();
             return ret;
         }
@@ -38,8 +43,22 @@ namespace StreamDeck_xSplit_Preview
         NAudio.CoreAudioApi.MMDevice dev;
         protected override void ProcessEvent(object sender, KeyEventArgs e)
         {
-            
+            if(e.IsDown)
+            {
+                if(recording)
+                {
+                  //  stopRecording();
+                }
+                else
+                {
+                   // startRecording();
+                }
+            }
+
         }
+       
+       
+
         public override void Process(StreamDeckSharp.IStreamDeck deck)
         {
             if(baseBitMap == null)

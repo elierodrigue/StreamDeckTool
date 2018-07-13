@@ -21,6 +21,7 @@ namespace StreamDeck_xSplit_Preview
 
         protected override void ProcessEvent(object sender, KeyEventArgs e)
         {
+           
             if (e.IsDown)
             {
                 if(state == "Stopped")

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Touchless.Vision.Camera;
+using System.IO;
+using System.IO.Compression;
 namespace StreamDeck_xSplit_Preview
 {
     public partial class Form1 : Form
@@ -15,11 +17,11 @@ namespace StreamDeck_xSplit_Preview
         List<Job> toProcess = new List<Job>();
         bool enabled = false;
         BackgroundWorker wrk = new BackgroundWorker();
-    
+
         public Form1()
         {
             InitializeComponent();
-            
+
             this.Load += Form1_Load;
             this.FormClosing += Form1_FormClosing;
             wrk.DoWork += Wrk_DoWork;
@@ -28,7 +30,7 @@ namespace StreamDeck_xSplit_Preview
 
 
         }
-        
+
         private void Wrk_DoWork(object sender, DoWorkEventArgs e)
         {
             if (System.IO.File.Exists("settingswebcam.txt"))
@@ -59,8 +61,8 @@ namespace StreamDeck_xSplit_Preview
 
                 }
             }
-           
-         
+
+
             while (!this.Disposing)
             {
                 btn0.SuspendLayout();
@@ -83,15 +85,15 @@ namespace StreamDeck_xSplit_Preview
                     StreamDeckSharp.IStreamDeck deck = StreamDeckWrapper.getInstance().getDeck();
                     foreach (Job j in toProcess)
                     {
-                       
+
                         j.Process(deck);
                         j.Draw(deck);
-                        switch(j.ButtonId)
+                        switch (j.ButtonId)
                         {
                             case 0:
 
                                 btn0.Text = "";
-                                btn0.CreateGraphics().DrawImage(j.theBitmap,0,0,btn0.Width,btn0.Height);
+                                btn0.CreateGraphics().DrawImage(j.theBitmap, 0, 0, btn0.Width, btn0.Height);
                                 break;
                             case 1:
                                 btn1.Text = "";
@@ -152,7 +154,7 @@ namespace StreamDeck_xSplit_Preview
                         }
                     }
                 }
-                catch(Exception exc)
+                catch (Exception exc)
                 {
 
                 }
@@ -174,9 +176,9 @@ namespace StreamDeck_xSplit_Preview
                 btn14.ResumeLayout();
                 Application.DoEvents();
                 System.Threading.Thread.Sleep(100);
-     
+
             }
-            
+
 
         }
 
@@ -206,32 +208,32 @@ namespace StreamDeck_xSplit_Preview
         }
         private void Deck_KeyStateChanged(object sender, StreamDeckSharp.KeyEventArgs e)
         {
-           
-           
+
+
         }
 
-        private void StartCapture(object sender,EventArgs e )
+        private void StartCapture(object sender, EventArgs e)
         {
-           
+
         }
-       
+
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-    
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
             wrk.RunWorkerAsync();
             foreach (Camera cam in CameraService.AvailableCameras)
             {
 
                 comboBox1.Items.Add(cam.Name);
-                 
-            
+
+
             }
-            for(int x=0;x<=14;x++)
+            for (int x = 0; x <= 14; x++)
             {
                 comboBox2.Items.Add(x.ToString());
                 comboBox4.Items.Add(x.ToString());
@@ -245,7 +247,7 @@ namespace StreamDeck_xSplit_Preview
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -261,9 +263,9 @@ namespace StreamDeck_xSplit_Preview
         private void button2_Click(object sender, EventArgs e)
         {
             VUMeter meter = new VUMeter();
-         
+
             meter.ButtonId = int.Parse(comboBox4.SelectedItem.ToString());
-            meter.OutputDeviceName = comboBox3.SelectedItem.ToString() ;
+            meter.OutputDeviceName = comboBox3.SelectedItem.ToString();
             toProcess.Add(meter);
             Save();
         }
@@ -271,9 +273,9 @@ namespace StreamDeck_xSplit_Preview
         {
             List<WebcamFullScreen> wfs = new List<WebcamFullScreen>();
             List<VUMeter> meters = new List<VUMeter>();
-            foreach(Job j in toProcess)
+            foreach (Job j in toProcess)
             {
-                if(j.GetType() == typeof(WebcamFullScreen))
+                if (j.GetType() == typeof(WebcamFullScreen))
                 {
                     wfs.Add((WebcamFullScreen)j);
                 }
@@ -284,7 +286,7 @@ namespace StreamDeck_xSplit_Preview
             }
             Newtonsoft.Json.JsonSerializer s = new Newtonsoft.Json.JsonSerializer();
             using (System.IO.StreamWriter sw = new System.IO.StreamWriter("settingswebcam.txt"))
-            
+
             using (Newtonsoft.Json.JsonWriter writer = new Newtonsoft.Json.JsonTextWriter(sw))
             {
                 s.Serialize(writer, wfs);
@@ -299,12 +301,13 @@ namespace StreamDeck_xSplit_Preview
         }
         private void RemoveForIndex(int index)
         {
-            
+
             List<Job> toRemove = new List<Job>();
             foreach (Job j in toProcess)
             {
                 if (j.ButtonId == index)
                 {
+                    StreamDeckSharp.InterfaceExtensions.ClearKey(StreamDeckWrapper.getInstance().getDeck(), index);
                     toRemove.Add(j);
                 }
             }
@@ -312,7 +315,7 @@ namespace StreamDeck_xSplit_Preview
             {
                 toProcess.Remove(j);
             }
-            switch(index)
+            switch (index)
             {
                 case 0:
                     btn0.Text = "0";
@@ -360,7 +363,8 @@ namespace StreamDeck_xSplit_Preview
                     btn14.Text = "14";
                     break;
             }
-            
+
+
             Save();
         }
         private void btn0_Click(object sender, EventArgs e)
@@ -443,7 +447,7 @@ namespace StreamDeck_xSplit_Preview
         private void button3_Click(object sender, EventArgs e)
         {
             InputMeter meter = new InputMeter();
-         
+
             meter.ButtonId = int.Parse(comboBox6.SelectedItem.ToString());
             meter.OutputDeviceName = comboBox5.SelectedItem.ToString();
             toProcess.Add(meter);
@@ -453,11 +457,49 @@ namespace StreamDeck_xSplit_Preview
         private void button4_Click(object sender, EventArgs e)
         {
             StopWatch meter = new StopWatch();
-        
+
             meter.ButtonId = int.Parse(comboBox8.SelectedItem.ToString());
-        
+
             toProcess.Add(meter);
             Save();
+        }
+
+        private void saveAllStreamDeckProfilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Zip|*.zip";
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                if (System.IO.File.Exists(sfd.FileName))
+                {
+                    System.IO.File.Delete(sfd.FileName);
+                }
+                ZipFile.CreateFromDirectory(System.IO.Path.Combine(Environment.ExpandEnvironmentVariables("%AppData%"), "Elgato\\StreamDeck\\ProfilesV2"), sfd.FileName);
+            }
+        }
+
+        private void restoreStreamDeckProfilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Make sure to stop the streamdeck application") == DialogResult.OK)
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "Zip|*.zip";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    System.IO.DirectoryInfo di = new DirectoryInfo(System.IO.Path.Combine(Environment.ExpandEnvironmentVariables("%AppData%"), "Elgato\\StreamDeck\\ProfilesV2"));
+
+                    foreach (FileInfo file in di.GetFiles())
+                    {
+                        file.Delete();
+                    }
+                    foreach (DirectoryInfo dir in di.GetDirectories())
+                    {
+                        dir.Delete(true);
+                    }
+                    ZipFile.ExtractToDirectory(ofd.FileName, System.IO.Path.Combine(Environment.ExpandEnvironmentVariables("%AppData%"), "Elgato\\StreamDeck\\ProfilesV2"));
+                }
+            }
         }
     }
 }

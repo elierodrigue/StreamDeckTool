@@ -19,6 +19,7 @@ namespace StreamDeck_xSplit_Preview
         long frameDelay = 100;
         public void HookEvents()
         {
+            enabled = false;
             cfs = null;
             foreach (Camera cam in CameraService.AvailableCameras)
             {
@@ -62,7 +63,7 @@ namespace StreamDeck_xSplit_Preview
                 if (enabled)
                 {
                     imgData = StreamDeckSharp.Extensions.StreamDeckFullScreenDrawingExtension.GetFullScreenBitmap(arg2.Image);
-
+                  
                 }
                 stopWatch.Start();
             }
@@ -74,33 +75,39 @@ namespace StreamDeck_xSplit_Preview
         }
         public override void Process(IStreamDeck deck)
         {
-            if(enabled)
+            if (!captureStarted)
             {
-                if(!captureStarted)
+                try
                 {
-                    try
-                    {
-                        cfs.StartFrameCapture();
-                        stopWatch.Start();
-                        captureStarted = true;
-                    }
-                    catch (Exception exc)
-                    {
-
-                    }
+                    cfs.StartFrameCapture();
+                    stopWatch.Start();
+                    captureStarted = true;
                 }
-                if (imgData.Length != 0)
+                catch (Exception exc)
                 {
 
-                   // StreamDeckSharp.Extensions.StreamDeckFullScreenDrawingExtension.DrawFullScreenBitmap(deck, imgData);
                 }
+            }
+            if (imgData.Length != 0)
+            {
+
+                // StreamDeckSharp.Extensions.StreamDeckFullScreenDrawingExtension.DrawFullScreenBitmap(deck, imgData);
+            }
+            if (enabled)
+            {
+                
+                StreamDeckSharp.Extensions.StreamDeckFullScreenDrawingExtension.DrawFullScreenBitmap(StreamDeckWrapper.getInstance().getDeck(), imgData);
             }
         }
         protected override void ProcessEvent(object sender, StreamDeckSharp.KeyEventArgs arg)
         {
             if(arg.IsDown)
             {
-                enabled = !enabled;
+                enabled = true;
+            }
+            else
+            {
+                enabled = false;
             }
         }
     }

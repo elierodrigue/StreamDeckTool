@@ -59,10 +59,15 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAllStreamDeckProfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restoreStreamDeckProfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -70,7 +75,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(14, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(378, 127);
             this.groupBox1.TabIndex = 0;
@@ -108,7 +113,7 @@
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.comboBox3);
             this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Location = new System.Drawing.Point(402, 12);
+            this.groupBox2.Location = new System.Drawing.Point(404, 37);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(378, 127);
             this.groupBox2.TabIndex = 3;
@@ -143,7 +148,7 @@
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(804, 37);
+            this.btn4.Location = new System.Drawing.Point(806, 62);
             this.btn4.Margin = new System.Windows.Forms.Padding(0);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(74, 74);
@@ -154,7 +159,7 @@
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(884, 37);
+            this.btn3.Location = new System.Drawing.Point(886, 62);
             this.btn3.Margin = new System.Windows.Forms.Padding(0);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(74, 74);
@@ -165,7 +170,7 @@
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(964, 37);
+            this.btn2.Location = new System.Drawing.Point(966, 62);
             this.btn2.Margin = new System.Windows.Forms.Padding(0);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(74, 74);
@@ -176,7 +181,7 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(1044, 37);
+            this.btn1.Location = new System.Drawing.Point(1046, 62);
             this.btn1.Margin = new System.Windows.Forms.Padding(0);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(74, 74);
@@ -187,7 +192,7 @@
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(1124, 37);
+            this.btn0.Location = new System.Drawing.Point(1126, 62);
             this.btn0.Margin = new System.Windows.Forms.Padding(0);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(74, 74);
@@ -198,7 +203,7 @@
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(1124, 117);
+            this.btn5.Location = new System.Drawing.Point(1126, 142);
             this.btn5.Margin = new System.Windows.Forms.Padding(0);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(74, 74);
@@ -209,7 +214,7 @@
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(1044, 117);
+            this.btn6.Location = new System.Drawing.Point(1046, 142);
             this.btn6.Margin = new System.Windows.Forms.Padding(0);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(74, 74);
@@ -220,7 +225,7 @@
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(964, 117);
+            this.btn7.Location = new System.Drawing.Point(966, 142);
             this.btn7.Margin = new System.Windows.Forms.Padding(0);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(74, 74);
@@ -231,7 +236,7 @@
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(884, 117);
+            this.btn8.Location = new System.Drawing.Point(886, 142);
             this.btn8.Margin = new System.Windows.Forms.Padding(0);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(74, 74);
@@ -242,7 +247,7 @@
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(804, 117);
+            this.btn9.Location = new System.Drawing.Point(806, 142);
             this.btn9.Margin = new System.Windows.Forms.Padding(0);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(74, 74);
@@ -253,7 +258,7 @@
             // 
             // btn10
             // 
-            this.btn10.Location = new System.Drawing.Point(1124, 197);
+            this.btn10.Location = new System.Drawing.Point(1126, 222);
             this.btn10.Margin = new System.Windows.Forms.Padding(0);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(74, 74);
@@ -264,7 +269,7 @@
             // 
             // btn11
             // 
-            this.btn11.Location = new System.Drawing.Point(1044, 197);
+            this.btn11.Location = new System.Drawing.Point(1046, 222);
             this.btn11.Margin = new System.Windows.Forms.Padding(0);
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(74, 74);
@@ -275,7 +280,7 @@
             // 
             // btn12
             // 
-            this.btn12.Location = new System.Drawing.Point(964, 197);
+            this.btn12.Location = new System.Drawing.Point(966, 222);
             this.btn12.Margin = new System.Windows.Forms.Padding(0);
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(74, 74);
@@ -286,7 +291,7 @@
             // 
             // btn13
             // 
-            this.btn13.Location = new System.Drawing.Point(884, 197);
+            this.btn13.Location = new System.Drawing.Point(886, 222);
             this.btn13.Margin = new System.Windows.Forms.Padding(0);
             this.btn13.Name = "btn13";
             this.btn13.Size = new System.Drawing.Size(74, 74);
@@ -297,7 +302,7 @@
             // 
             // btn14
             // 
-            this.btn14.Location = new System.Drawing.Point(804, 197);
+            this.btn14.Location = new System.Drawing.Point(806, 222);
             this.btn14.Margin = new System.Windows.Forms.Padding(0);
             this.btn14.Name = "btn14";
             this.btn14.Size = new System.Drawing.Size(74, 74);
@@ -310,7 +315,7 @@
             // 
             this.chkConnection.AutoSize = true;
             this.chkConnection.Enabled = false;
-            this.chkConnection.Location = new System.Drawing.Point(924, 13);
+            this.chkConnection.Location = new System.Drawing.Point(926, 38);
             this.chkConnection.Name = "chkConnection";
             this.chkConnection.Size = new System.Drawing.Size(170, 21);
             this.chkConnection.TabIndex = 19;
@@ -322,7 +327,7 @@
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.comboBox5);
             this.groupBox3.Controls.Add(this.comboBox6);
-            this.groupBox3.Location = new System.Drawing.Point(402, 145);
+            this.groupBox3.Location = new System.Drawing.Point(404, 170);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(378, 127);
             this.groupBox3.TabIndex = 4;
@@ -359,7 +364,7 @@
             // 
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Controls.Add(this.comboBox8);
-            this.groupBox4.Location = new System.Drawing.Point(12, 145);
+            this.groupBox4.Location = new System.Drawing.Point(14, 170);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(378, 127);
             this.groupBox4.TabIndex = 5;
@@ -383,6 +388,40 @@
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(366, 24);
             this.comboBox8.TabIndex = 0;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backupToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1247, 28);
+            this.menuStrip1.TabIndex = 20;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // backupToolStripMenuItem
+            // 
+            this.backupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveAllStreamDeckProfilesToolStripMenuItem,
+            this.restoreStreamDeckProfilesToolStripMenuItem});
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
+            this.backupToolStripMenuItem.Text = "Backup";
+            // 
+            // saveAllStreamDeckProfilesToolStripMenuItem
+            // 
+            this.saveAllStreamDeckProfilesToolStripMenuItem.Name = "saveAllStreamDeckProfilesToolStripMenuItem";
+            this.saveAllStreamDeckProfilesToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.saveAllStreamDeckProfilesToolStripMenuItem.Text = "Save All Stream Deck Profiles";
+            this.saveAllStreamDeckProfilesToolStripMenuItem.Click += new System.EventHandler(this.saveAllStreamDeckProfilesToolStripMenuItem_Click);
+            // 
+            // restoreStreamDeckProfilesToolStripMenuItem
+            // 
+            this.restoreStreamDeckProfilesToolStripMenuItem.Name = "restoreStreamDeckProfilesToolStripMenuItem";
+            this.restoreStreamDeckProfilesToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.restoreStreamDeckProfilesToolStripMenuItem.Text = "Restore Stream Deck Profiles";
+            this.restoreStreamDeckProfilesToolStripMenuItem.Click += new System.EventHandler(this.restoreStreamDeckProfilesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -409,12 +448,16 @@
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,6 +496,10 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAllStreamDeckProfilesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restoreStreamDeckProfilesToolStripMenuItem;
     }
 }
 
